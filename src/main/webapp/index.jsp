@@ -12,8 +12,8 @@
     <div class="row">
     <div class="col-lg-6">
     <div class="input-group">
-      <input id="1" type="text" class="form-control" placeholder="Stairwells...">
-      <input id="2" type="text" class="form-control" placeholder="SteosPerStride...">
+      <input id="1" type="text" class="form-control" placeholder="Flights" value="">
+      <input id="2" type="text" class="form-control" placeholder="StepsPerStride..." value="">
       
     </div><!-- /input-group -->
     <span class="input-group-btn">
@@ -33,7 +33,17 @@ function loadDoc() {
       document.getElementById("demo").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "http://localhost:8080/StairsWebApp/rest/input/"+document.getElementById('1').value+"/"+document.getElementById('2').value, true);
+  var param1 = document.getElementById('1').value;
+  if(param1 === "")
+	  {
+	 	param1 = "_"; 
+	  }
+  var param2 = document.getElementById('2').value;
+  if(param2 === "")
+	  {
+	 	param2 = "_"; 
+	  }
+  xhttp.open("GET", "http://localhost:8080/StairsWebApp/rest/input/"+param1+"/"+param2, true);
   xhttp.send();
 }
 </script>
