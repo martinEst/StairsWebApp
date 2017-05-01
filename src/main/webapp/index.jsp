@@ -12,8 +12,8 @@
     <div class="row">
     <div class="col-lg-6">
     <div class="input-group">
-      <input id="1" type="text" class="form-control" placeholder="Flights" value="">
-      <input id="2" type="text" class="form-control" placeholder="StepsPerStride..." value="">
+      <input id="1" type="text" class="form-control" placeholder="Flights, ex: {Number,Number}" value="">
+      <input id="2" type="text" class="form-control" placeholder="StepsPerStride... ex: Number" value="">
       
     </div><!-- /input-group -->
     <span class="input-group-btn">
