@@ -52,8 +52,9 @@ public class DataProcess {
 		int strides = 0;
 
 		for (int i = 0; i < flights.length; i++) {
-			if (i > 0)
-				strides += 2;
+			if (i > 0)		//landings will be considered after first flight
+				strides += 2; 
+			
 			//math.ceil is rounding to nearest larger integer value. ex 5.1 become 6
 			//division is casted to double, so that floating point is not lost, otherwise ceil value remain same.
 			strides += Math.ceil((double)(flights[i]) / stepsPerStride);
