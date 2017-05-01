@@ -33,7 +33,7 @@ public class StairwellCalculationService {
 		catch (DataValidationException e) 
 		{
 			String error = e.getMessage();
-			JsonObject personObject = Json.createObjectBuilder().add("error", error).build();
+			JsonObject personObject = Json.createObjectBuilder().add("<span class='label label-danger'>error</span>", error).build();
 			return Response.status(200).entity(personObject.toString()).build();
 		}
 
