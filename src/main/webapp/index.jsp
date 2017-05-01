@@ -11,13 +11,19 @@
 
     <div class="row">
     <div class="col-lg-6">
+    
     <div class="input-group">
-      <input id="1" type="text" class="form-control" placeholder="Flights, ex: {Number,Number}" value="">
-      <input id="2" type="text" class="form-control" placeholder="StepsPerStride... ex: Number" value="">
-      
-    </div><!-- /input-group -->
+	  <span class="input-group-addon" id="basic-addon3">Numb. of Flights</span>
+   	  <input id="1" type="text" class="form-control" placeholder="ex:{num1,num2,...,numN}" value="">
+    </div>
+	
+	<div class="input-group">
+	  <span class="input-group-addon" id="basic-addon3">Steps per Stride </span>
+   	   <input id="2" type="text" class="form-control" placeholder="ex: num" value="">
+    </div>
+    
     <span class="input-group-btn">
-        <button title = "calculate	the	minimum	number	of	strides	" class="btn btn-default" type="button"  onclick="loadDoc()">Calculate!</button>
+        <button title = "calculate	the	minimum	number	of	strides	" class="btn btn-default" type="button"  onclick="loadDoc()">Calculate</button>
       </span>
   </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->
